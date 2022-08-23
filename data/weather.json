@@ -1,0 +1,473 @@
+{
+	"temperature_scale": {
+		"name": "Fahrenheit",
+		"symbol": "°F"
+	},
+	"freezing_temperature": 32,
+	"extreme_range": [40, 90],
+	"percipitation": {
+		"duration_units": "hour",
+		"intensity": {
+			"light": { 
+				"id": 0, 
+				"name": "light",
+				"precipitation": {
+					"unfrozen": {
+						"d%": [
+							[1,20],
+							[21,40],
+							[41,50],
+							[51,75],
+							[76,90],
+							[91,100]
+						],
+						"precipitation": [
+							{"grade":"light",  "form":"fog"},
+							{"grade":"medium", "form":"fog"},
+							{"form":"drizzle"},
+							{"form":"drizzle"},
+							{"grade":"light",  "form":"rain"},
+							{"grade":"light",  "form":"rain",
+								"alt": 
+								{
+									"form":"sleet", 
+									"condition": {"relation": "<", "temperature": 40}
+								}
+							}
+						],
+						"duration": [
+							{"n":1, "d":8},
+							{"n":1, "d":6},
+							{"n":1, "d":4},
+							{"n":2, "d":12},
+							{"n":1, "d":4},
+							{"n":1, "d":1}
+						]
+					},
+					"frozen": {
+						"d%": [
+							[1,20],
+							[21,40],
+							[41,50],
+							[51,60],
+							[61,75],
+							[76,100]
+						],
+						"precipitation": [
+							{"grade":"light",  "form":"fog"},
+							{"grade":"light",  "form":"fog"},
+							{"grade":"medium", "form":"fog"},
+							{"grade":"light",  "form":"snow"},
+							{"grade":"light",  "form":"snow"},
+							{"grade":"light",  "form":"snow"}
+						],
+						"duration": [
+							{"n":1, "d":6},
+							{"n":1, "d":8},
+							{"n":1, "d":4},
+							{"n":1, "d":1},
+							{"n":1, "d":4},
+							{"n":2, "d":12}
+						]
+					}
+				}
+			},
+			"medium": { 
+				"id": 1, 
+				"name": "medium",
+				"precipitations": {
+					"unfrozen": {
+						"d%": [
+							[1,10],
+							[11,20],
+							[21,30],
+							[31,35],
+							[36,70],
+							[71,90],
+							[91,100]
+						],
+						"precipitation": [
+							{"grade":"medium", "form":"fog"},
+							{"grade":"medium", "form":"fog"},
+							{"grade":"heavy",  "form":"fog"},
+							{"form":"rain"},
+							{"form":"rain"},
+							{"form":"rain"},
+							{"form":"rain", 
+								"alt": 
+								{
+									"form":"sleet", 
+									"condition": {"relation": "<", "temperature": 40}
+								}
+							}
+						],
+						"duration": [
+							{"n":1, "d":8},
+							{"n":1, "d":12},
+							{"n":1, "d":4},
+							{"n":2, "d":4},
+							{"n":1, "d":8},
+							{"n":2, "d":12},
+							{"n":1, "d":4}
+						]
+					},
+					"frozen": {
+						"d%": [
+							[1,10],
+							[11,20],
+							[21,30],
+							[31,50],
+							[51,90],
+							[91,100]
+						],
+						"precipitation": [
+							{"grade":"medium", "form":"fog"},
+							{"grade":"medium", "form":"fog"},
+							{"grade":"heavy",  "form":"fog"},
+							{"grade":"medium", "form":"snow"},
+							{"grade":"medium", "form":"snow"},
+							{"grade":"medium", "form":"snow"}
+						],
+						"duration": [
+							{"n":1, "d":6},
+							{"n":1, "d":8},
+							{"n":1, "d":4},
+							{"n":1, "d":4},
+							{"n":1, "d":8},
+							{"n":2, "d":12}
+						]
+					}
+				}
+			},
+			"heavy": { 
+				"id": 2, 
+				"name": "heavy",
+				"precipitations": {
+					"unfrozen": {
+						"d%": [
+							[1,10],
+							[11,20],
+							[21,50],
+							[51,70],
+							[71,85],
+							[86,90],
+							[91,100]
+						],
+						"precipitation": [
+							{"grade":"heavy", "form":"fog"},
+							{"grade":"heavy", "form":"fog"},
+							{"grade":"heavy", "form":"rain"},
+							{"grade":"heavy", "form":"rain"},
+							{"grade":"heavy", "form":"rain", 
+								"alt": 
+								{
+									"form":"sleet", 
+									"condition": {"relation": "<", "temperature": 40}
+								}
+							},
+							{"form":"thunderstorm"},
+							{"form":"thunderstorm"}
+						],
+						"duration": [
+							{"n":1, "d":8},
+							{"n":2, "d":6},
+							{"n":1, "d":12},
+							{"n":2, "d":12},
+							{"n":1, "d":8},
+							{"n":1, "d":1},
+							{"n":1, "d":3}
+						]
+					},
+					"frozen": {
+						"d%": [
+							[1,10],
+							[11,20],
+							[21,60],
+							[61,90],
+							[91,100]
+						],
+						"precipitation": [
+							{"grade":"medium", "form":"fog"},
+							{"grade":"heavy",  "form":"fog"},
+							{"grade":"light",  "form":"snow"},
+							{"grade":"medium", "form":"snow"},
+							{"grade":"heavy",  "form":"snow"}
+						],
+						"duration": [
+							{"n":1, "d":8},
+							{"n":2, "d":6},
+							{"n":2, "d":12},
+							{"n":1, "d":8},
+							{"n":1, "d":6}
+						]
+					}
+				}
+			},
+			"torrential": { 
+				"id": 3, 
+				"name": "torrential",
+				"precipitations": {
+					"unfrozen": {
+						"d%": [
+							[1,5],
+							[6,10],
+							[11,30],
+							[31,60],
+							[61,80],
+							[81,95],
+							[96,100]
+						],
+						"precipitation": [
+							{"grade":"heavy", "form":"fog"},
+							{"grade":"heavy", "form":"fog"},
+							{"grade":"heavy", "form":"rain"},
+							{"grade":"heavy", "form":"rain"},
+							{"grade":"heavy", "form":"rain", 
+								"alt": 
+								{
+									"form":"sleet", 
+									"condition": {"relation": "<", "temperature": 40}
+								}
+							},
+							{"form":"thunderstorm"},
+							{"form":"thunderstorm"}
+						],
+						"duration": [
+							{"n":1, "d":8},
+							{"n":2, "d":6},
+							{"n":2, "d":6},
+							{"n":2, "d":12},
+							{"n":2, "d":6},
+							{"n":1, "d":3},
+							{"n":1, "d":6}
+						]
+					},
+					"frozen": {
+						"d%": [
+							[1,5],
+							[6,10],
+							[11,50],
+							[51,90],
+							[91,100]
+						],
+						"precipitation": [
+							{"grade":"heavy", "form":"fog"},
+							{"grade":"heavy", "form":"fog"},
+							{"grade":"heavy", "form":"snow"},
+							{"grade":"heavy", "form":"snow"},
+							{"grade":"heavy", "form":"snow"}
+						],
+						"duration": [
+							{"n":1, "d":8},
+							{"n":2, "d":6},
+							{"n":1, "d":4},
+							{"n":1, "d":8},
+							{"n":2, "d":12}
+						]
+					}
+				}
+			}
+		},
+		"forms": {
+			"drizzle": {
+				"NA": {
+					"description": "Drizzle reduces visibility to three-quarters of the normal range, imposing a –2 penalty on Perception checks. It automatically extinguishes tiny unprotected flames (candles and the like, but not torches)."
+				}
+			},
+			"fog": {
+				"light": {
+					"description": ""
+				},
+				"medium": {
+					"description": ""
+				},
+				"heavy": {
+					"description": ""
+				}
+			},
+			"rain": {
+				"NA": {
+					"description": ""
+				},
+				"heavy": {
+					"description": ""
+				}
+			},
+			"sleet": {
+				"NA": {
+					"description": ""
+				}
+			},
+			"snow": {
+				"light": {
+					"description": ""
+				},
+				"medium": {
+					"description": ""
+				},
+				"heavy": {
+					"description": ""
+				}
+			},
+			"thunderstorm": {
+				"NA": {
+					"description": ""
+				}
+			}
+		},
+		"frequency": {
+			"drought"      : { "id": 0, "name": "drought",      "chance_of_preticipation":  5 },
+			"rare"         : { "id": 1, "name": "rare",         "chance_of_preticipation": 15 },
+			"intermittent" : { "id": 2, "name": "intermittent", "chance_of_preticipation": 30 },
+			"common"       : { "id": 3, "name": "common",       "chance_of_preticipation": 60 },
+			"constant"     : { "id": 4, "name": "constant",     "chance_of_preticipation": 95 }
+		}
+	},
+	"seasons": {
+		"spring" : { "id": 0, "name": "spring" },
+		"summer" : { "id": 1, "name": "summer" },
+		"fall"   : { "id": 2, "name": "fall"   },
+		"winter" : { "id": 3, "name": "winter" }
+	},
+	"climate": {
+		"cold": {
+			"latitude_range": [60,90],
+			"temperature": {
+				"seasonal_baseline": {
+					"spring": 30,
+					"summer": 40,
+					"fall":   30,
+					"winter": 20
+				},
+				"variations": {
+					"d%": [[1,20],[21,40],[41,60],[61,80],[81,95],[96,99],[100,100]],
+					"variation": [
+						{"sign":-1, "n":3, "d":10},
+						{"sign":-1, "n":2, "d":10},
+						{"sign":-1, "n":1, "d":10},
+						null,
+						{"sign": 1, "n":1, "d":10},
+						{"sign": 1, "n":2, "d":10},
+						{"sign": 1, "n":3, "d":10}
+					],
+					"duration": [
+						{"n":1, "d":4, "mod":0},
+						{"n":1, "d":6, "mod":1},
+						{"n":1, "d":6, "mod":2},
+						{"n":1, "d":6, "mod":2},
+						{"n":1, "d":6, "mod":1},
+						{"n":1, "d":4, "mod":0},
+						{"n":1, "d":2, "mod":0}
+					]
+				}
+			},
+			"preciptitation": {
+				"frequency": { "step": -1, "ids": [2,3,2,1] },
+				"intensity": { "step": -1 }
+			}
+		},
+		"temperate": {
+			"latitude_range": [30,60],
+			"temperature": {
+				"seasonal_baseline": {
+					"spring": 60,
+					"summer": 80,
+					"fall":   60,
+					"winter": 30
+				},
+				"variations": {
+					"d%": [[1,5],[6,15],[16,35],[36,65],[66,85],[86,95],[96,100]],
+					"variation": [
+						{"sign":-1, "n":3, "d":10},
+						{"sign":-1, "n":2, "d":10},
+						{"sign":-1, "n":1, "d":10},
+						null,
+						{"sign": 1, "n":1, "d":10},
+						{"sign": 1, "n":2, "d":10},
+						{"sign": 1, "n":3, "d":10}
+					],
+					"duration": [
+						{"n":1, "d":2, "mod":0},
+						{"n":1, "d":4, "mod":0},
+						{"n":1, "d":4, "mod":1},
+						{"n":1, "d":6, "mod":1},
+						{"n":1, "d":4, "mod":1},
+						{"n":1, "d":4, "mod":0},
+						{"n":1, "d":2, "mod":0}
+					]
+				}
+			},
+			"preciptitation": {
+				"frequency": { "step": 0, "ids": [2,3,2,1] },
+				"intensity": { "step": 0 }
+			}
+		},
+		"tropical": {
+			"latitude_range": [0, 30],
+			"temperature": {
+				"seasonal_baseline": {
+					"spring": 75, 
+					"summer": 95, 
+					"fall":   75, 
+					"winter": 50
+				},
+				"variations": {
+					"d%": [[1,10],[11,25],[26,55],[56,85],[86,100]],
+					"variation": [
+						{"sign":-1, "n":2, "d":10},
+						{"sign":-1, "n":1, "d":10},
+						null,
+						{"sign": 1, "n":1, "d":10},
+						{"sign": 1, "n":2, "d":10}
+					],
+					"duration": [
+						{"n":1, "d":2, "mod":0},
+						{"n":1, "d":2, "mod":0},
+						{"n":1, "d":4, "mod":0},
+						{"n":1, "d":4, "mod":0},
+						{"n":1, "d":2, "mod":0}
+					]
+				}
+			},
+			"preciptitation": {
+				"frequency": { "step": 1, "ids": [3,2,3,1] },
+				"intensity": { "step": 1 }
+			}
+		}
+	},
+	"elevation": {
+		"sea-level": {
+			"altitude_range": [0, 1000],
+			"modifiers": {
+				"temperature": 10,
+				"preciptitation": {
+					"frequency": 0,
+					"intensity": "heavy"
+				}
+			}
+		},
+		"lowland": {
+			"altitude_range": [1000, 5000],
+			"modifiers": {
+				"temperature": 0,
+				"preciptitation": {
+					"frequency": 0,
+					"intensity": "medium"
+				}
+			}
+		},
+		"highland": {
+			"altitude_range": [5000, -1],
+			"modifiers": {
+				"temperature": -10,
+				"preciptitation": {
+					"frequency": -1,
+					"intensity": "medium"
+				}
+			}
+		}
+	},
+	"details": {
+		
+	}
+}

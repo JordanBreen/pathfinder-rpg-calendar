@@ -1,0 +1,17 @@
+* {
+	color:       black;
+	font-family: monospace;
+}
+#banner {
+	border-bottom: 3px solid black;
+}
+#credit_to_author {
+	font-style: italic;
+}
+label {
+	display:    block;
+	text-align: right;
+}
+nav > a {
+	margin-right: 5px;
+}

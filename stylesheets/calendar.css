@@ -1,0 +1,19 @@
+.spring:not(.active) { --primary-color: DarkOliveGreen; --secondary-color: Ivory; }
+.summer:not(.active) { --primary-color: Maroon;         --secondary-color: Ivory; }
+.fall:not(.active)   { --primary-color: DarkGoldenRod;  --secondary-color: Ivory; }
+.winter:not(.active) { --primary-color: CornflowerBlue; --secondary-color: Ivory; }
+
+.border { 
+	border-color: var(--primary-color); 
+}
+.curr:hover, .invert.color {
+	background-color: var(--primary-color); 
+	color: var(--secondary-color);
+}
+.color {
+	color: var(--primary-color); 
+	background-color: var(--secondary-color);
+}
+.era::before {
+	content: ' ';
+}

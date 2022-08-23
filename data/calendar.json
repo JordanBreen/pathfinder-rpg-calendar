@@ -1,0 +1,65 @@
+{
+	"standard": 
+	{
+		"days": 
+		[
+			{ "name": "Sunday"    },
+			{ "name": "Monday"    },
+			{ "name": "Tuesday"   },
+			{ "name": "Wednesday" },
+			{ "name": "Thursday"  },
+			{ "name": "Friday"    },
+			{ "name": "Saturday"  }
+		],
+		"months": 
+		[
+			{ "name": "January",   "abbr": "Jan", "code": 1,   "days": 31, "season": "winter" },
+			{ "name": "February",  "abbr": "Feb", "code": 4,   "days": 28, "season": "winter" },
+			{ "name": "March",     "abbr": "Mar", "code": 4,   "days": 31, "season": "spring" },
+			{ "name": "April",     "abbr": "Apr", "code": 0, "days": 30, "season": "spring" },
+			{ "name": "May",       "abbr": "May", "code": 2,   "days": 31, "season": "spring" },
+			{ "name": "June",      "abbr": "Jun", "code": 5,   "days": 30, "season": "summer" },
+			{ "name": "July",	   "abbr": "Jul", "code": 0, "days": 31, "season": "summer" },
+			{ "name": "August",    "abbr": "Aug", "code": 3,   "days": 31, "season": "summer" },
+			{ "name": "September", "abbr": "Sep", "code": 6,   "days": 30, "season": "fall"   },
+			{ "name": "October",   "abbr": "Oct", "code": 1,   "days": 31, "season": "fall"   },
+			{ "name": "November",  "abbr": "Nov", "code": 4,   "days": 30, "season": "fall"   },
+			{ "name": "December",  "abbr": "Dec", "code": 6,   "days": 31, "season": "winter" }
+		],
+		"seasons": 
+		[
+			{ "name": "spring" },
+			{ "name": "summer" },
+			{ "name": "fall"   },
+			{ "name": "winter" }
+		]
+	},
+	"pathfinder": 
+	{
+		"days": 
+		[
+			{ "name": "Sunday",  "purp": ["rest", "religion"]                    },
+			{ "name": "Moonday", "purp": ["work", "religion [night]"]            },
+			{ "name": "Toilday", "purp": ["work"]                                },
+			{ "name": "Wealday", "purp": ["work"]                                },
+			{ "name": "Oathday", "purp": ["work", "pacts signed", "oaths sworn"] },
+			{ "name": "Fireday", "purp": ["work", "market"]                      },
+			{ "name": "Starday", "purp": ["work"]                                }
+		],
+		"months": 
+		[
+			{ "name": "Abadius",   "abbr": "Aba", "pron": ["ah", "BAY", "dee", "us"], "deity": "Abadar",     "season": "winter" },
+			{ "name": "Calistril", "abbr": "Cal", "pron": ["KAHL", "izz", "trihl"],   "deity": "Calistria",  "season": "winter" },
+			{ "name": "Pharast",   "abbr": "Pha", "pron": ["fah", "RAHST"],           "deity": "Pharasma",   "season": "spring" },
+			{ "name": "Gozran",    "abbr": "Goz", "pron": ["GOHZ", "ran"],            "deity": "Gozreh",     "season": "spring" },
+			{ "name": "Desnus",    "abbr": "Des", "pron": ["DEZ", "nuhs"],            "deity": "Desna",      "season": "spring" },
+			{ "name": "Sarenith",  "abbr": "Sar", "pron": ["sa", "REHN", "ihth"],     "deity": "Sarenrae",   "season": "summer" },
+			{ "name": "Erastus",   "abbr": "Era", "pron": ["eh", "RAS", "tuhs"],      "deity": "Erastil",    "season": "summer" },
+			{ "name": "Arodus",    "abbr": "Aro", "pron": ["AIR", "oh", "duhs"],      "deity": "Aroden",     "season": "summer" },
+			{ "name": "Rova",      "abbr": "Rov", "pron": ["ROH", "va"],              "deity": "Rovagug",    "season": "fall"   },
+			{ "name": "Lamashan",  "abbr": "Lam", "pron": ["lah", "MAHSH", "ahn"],    "deity": "Lamashtu",   "season": "fall"   },
+			{ "name": "Neth",      "abbr": "Net", "pron": ["NEHTH"],                  "deity": "Nethys",     "season": "fall"   },
+			{ "name": "Kuthona",   "abbr": "Kut", "pron": ["koo", "THOH", "nah"],     "deity": "Zon-Kuthon", "season": "winter" }
+		]
+	}
+}
